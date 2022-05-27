@@ -10,47 +10,17 @@ the index and finish, if i crosses j than increment i and reposition j at the en
 length of the array then decrement j. 
 
 ****
-```C++
-void Sorts::randomizedQuickSort(vector<int>& V) {
-    if (V.size() <= 1)
-        return;
-    randomizedQuickSortStep(V, 0, V.size() - 1);
-
-}
-void Sorts::randomizedQuickSortStep(vector<int>& V, int a, int b) {
-    if (a >= b)
-        return;
-    srand(time(NULL));
-    int n = a + (rand() % (b - a)); //random number between a and b
-    int pivot = V.at(n);    //to randomnize pivot 
-    int tmp = V.at(b);  //pivot stays at same random position, but points to last element 
-    V.at(b) = V.at(n);
-    V.at(n) = tmp;
-
-    int l;
-    int r;
-    l = a;
-    r = b - 1;
-    while (l <= r)
-    {
-        while (l <= r && (V.at(l) <= pivot))
-            l++;
-        while (r >= l && (V.at(r) >= pivot))
-            r--;
-        if (l < r)
-        {
-            int temp = V.at(r);
-            V.at(r) = V.at(l);
-            V.at(l) = temp;
-        }
-    }
-    int temp = V.at(l);
-    V.at(l) = V.at(b);
-    V.at(b) = temp; // switch pivot to E
-    randomizedQuickSortStep(V, a, l - 1);
-    randomizedQuickSortStep(V, l + 1, b);
-
-}
+```Python3
+  while i < length:
+       sum = shortarr[i] + shortarr[j]
+       if sum == arg2:
+          str2 = "Target {0} found at index [{1}, {2}]".format(arg2, i,j)
+          print(str2)
+          break
+       if i >= j:
+          i+=1
+          j = len(shortarr) 
+       j-=1
 ```
 
 
