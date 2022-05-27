@@ -36,4 +36,4 @@ To run this project download file into IDE that supports Python3.
 ## Status 
 This is a project created by @MadCodes9 :grinning:
 
-Source: *Advanced Python-LinkeIn Learning*
+Source: *Advanced Python-LinkedIn Learning*
