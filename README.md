@@ -33,10 +33,6 @@ Project is created with
 ## Setup
 To run this project download file into IDE that supports Python3.
 
-**Sample Output**
-
-![Image]()
-
 ## Status 
 This is a project created by @MadCodes9 :grinning:
 
